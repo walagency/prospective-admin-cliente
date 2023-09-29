@@ -4,9 +4,9 @@ import { useState } from "react";
 import { db } from "@/firebase";
 import { doc, setDoc, collection } from "firebase/firestore";
 
-export default function FormularioSubirFactura({ toggleTexto }) {
+export default function FormularioSubirFactura({ toggleTexto2 }) {
 	const handleTextoClick = () => {
-    toggleTexto(); // Llama a la función toggleTexto para cambiar el estado
+    toggleTexto2(); // Llama a la función toggleTexto para cambiar el estado
   };
 	const [document, setDocument] = useState("");
 	const [invoiceDate, setInvoiceDate] = useState("");
