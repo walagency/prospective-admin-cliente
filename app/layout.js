@@ -1,3 +1,4 @@
+// Configuraciones de tipo de letra, navegación con rangos
 import './globals.css'
 import { Inter } from 'next/font/google'
 
