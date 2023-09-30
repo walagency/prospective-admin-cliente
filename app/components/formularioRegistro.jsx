@@ -8,6 +8,9 @@ export default function FormularioCrearUsuario({ toggleTexto }) {
   const handleTextoClick = () => {
     toggleTexto(); // Llama a la función toggleTexto para cambiar el estado
   };
+
+
+  
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [cellphone, setCellPhone] = useState("");

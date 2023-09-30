@@ -10,17 +10,17 @@ import Image from 'next/image';
 const MenuFormularios = () => {
   const [mostrarFormularioCrearUsuario, setMostrarFormularioCrearUsuario] = useState(false);
   const [mostrarFormularioSubirFactura, setMostrarFormularioSubirFactura] = useState(false);
-  const [mostrarComponente, setMostrarComponente] = useState(true);
-  const [mostrarComponente2, setMostrarComponente2] = useState(true);
+  const [mostrarImagen1, setMostrarImagen1] = useState(true);
+  const [mostrarImagen2, setMostrarImagen2] = useState(true);
 
   const toggleTexto = () => {
     setMostrarFormularioCrearUsuario(!mostrarFormularioCrearUsuario);
-    setMostrarComponente(!mostrarComponente);
+    setMostrarImagen1(!mostrarImagen1);
   };
 
   const toggleTexto2 = () => {
     setMostrarFormularioSubirFactura(!mostrarFormularioSubirFactura);
-    setMostrarComponente2(!mostrarComponente2);
+    setMostrarImagen2(!mostrarImagen2);
   };
 
   return (
@@ -28,7 +28,7 @@ const MenuFormularios = () => {
 
 
       <div>
-        {!mostrarFormularioCrearUsuario && mostrarComponente2 && (
+        {!mostrarFormularioCrearUsuario && mostrarImagen2 && (
           <Image
             src={imagen1}
             alt="Imagen"
@@ -40,8 +40,11 @@ const MenuFormularios = () => {
 
       </div>
 
+
+
+
       <div>
-        {!mostrarFormularioSubirFactura && mostrarComponente && (
+        {!mostrarFormularioSubirFactura && mostrarImagen1 && (
           <Image
             src={imagen2}
             alt="Imagen"
