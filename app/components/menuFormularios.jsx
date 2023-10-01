@@ -26,34 +26,36 @@ const MenuFormularios = () => {
   return (
     <>
 
-
-      <div>
-        {!mostrarFormularioCrearUsuario && mostrarImagen2 && (
-          <Image
-            src={imagen1}
-            alt="Imagen"
-            style={{ cursor: 'pointer' }}
-            onClick={toggleTexto}
-          />
-        )}
-        {mostrarFormularioCrearUsuario && <FormularioCrearUsuario toggleTexto={toggleTexto} />}
-
-      </div>
-
-
-
-
-      <div>
+    
+<div>
         {!mostrarFormularioSubirFactura && mostrarImagen1 && (
           <Image
-            src={imagen2}
-            alt="Imagen"
+            src={imagen1}
+            alt="Imagen1"
             style={{ cursor: 'pointer' }}
             onClick={toggleTexto2}
           />
         )}
         {mostrarFormularioSubirFactura && <FormularioSubirFactura toggleTexto2={toggleTexto2} />}
       </div>
+
+
+
+      <div>
+        {!mostrarFormularioCrearUsuario && mostrarImagen2 && (
+          <Image
+            src={imagen2}
+            alt="Imagen2"
+            style={{ cursor: 'pointer' }}
+            onClick={toggleTexto}
+          />
+        )}
+        {mostrarFormularioCrearUsuario && <FormularioCrearUsuario toggleTexto={toggleTexto} />}
+      </div>
+
+
+
+
 
     </>
   );
